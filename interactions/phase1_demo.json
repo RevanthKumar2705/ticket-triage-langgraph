@@ -1,0 +1,127 @@
+[
+  {
+    "conversation_id": "P1-DEMO-001",
+    "turns": [
+      {
+        "role": "user",
+        "message": "I'd like a refund for order ORD1001. The mouse is not working."
+      },
+      {
+        "role": "assistant",
+        "message": "We identified a refund request for order ORD1001. Reviewing details..."
+      },
+      {
+        "role": "user",
+        "message": "When will I get the refund?"
+      },
+      {
+        "role": "assistant",
+        "message": "Refund will be issued within 5 business days."
+      }
+    ],
+    "expected_outcome": {
+      "issue_type": "refund_request",
+      "order_id": "ORD1001"
+    }
+  },
+  {
+    "conversation_id": "P1-DEMO-002",
+    "turns": [
+      {
+        "role": "user",
+        "message": "My Bluetooth speaker (ORD1002) has not arrived yet."
+      },
+      {
+        "role": "assistant",
+        "message": "We detected a late delivery for ORD1002. Checking status..."
+      },
+      {
+        "role": "user",
+        "message": "Can you confirm delivery timing?"
+      },
+      {
+        "role": "assistant",
+        "message": "The package is in transit and expected to arrive soon."
+      }
+    ],
+    "expected_outcome": {
+      "issue_type": "late_delivery",
+      "order_id": "ORD1002"
+    }
+  },
+  {
+    "conversation_id": "P1-DEMO-003",
+    "turns": [
+      {
+        "role": "user",
+        "message": "The smart watch I got (ORD1004) is not working."
+      },
+      {
+        "role": "assistant",
+        "message": "We detected a defective product for ORD1004. Verifying warranty..."
+      },
+      {
+        "role": "user",
+        "message": "Is a replacement possible?"
+      },
+      {
+        "role": "assistant",
+        "message": "Yes. A replacement will be arranged under warranty."
+      }
+    ],
+    "expected_outcome": {
+      "issue_type": "defective_product",
+      "order_id": "ORD1004"
+    }
+  },
+  {
+    "conversation_id": "P1-DEMO-004",
+    "turns": [
+      {
+        "role": "user",
+        "message": "Wrong item shipped for order ORD1006."
+      },
+      {
+        "role": "assistant",
+        "message": "We found a wrong item issue for ORD1006. Creating replacement ticket..."
+      },
+      {
+        "role": "user",
+        "message": "Do I need to return the wrong item first?"
+      },
+      {
+        "role": "assistant",
+        "message": "We will send a prepaid return label and ship the correct item."
+      }
+    ],
+    "expected_outcome": {
+      "issue_type": "wrong_item",
+      "order_id": "ORD1006"
+    }
+  },
+  {
+    "conversation_id": "P1-DEMO-005",
+    "turns": [
+      {
+        "role": "user",
+        "message": "Please check order ORD1005, one sleeve is missing."
+      },
+      {
+        "role": "assistant",
+        "message": "We detected a missing item for ORD1005. Opening investigation..."
+      },
+      {
+        "role": "user",
+        "message": "How long will it take?"
+      },
+      {
+        "role": "assistant",
+        "message": "We will update you within 48 hours and ship the missing sleeve."
+      }
+    ],
+    "expected_outcome": {
+      "issue_type": "missing_item",
+      "order_id": "ORD1005"
+    }
+  }
+]
