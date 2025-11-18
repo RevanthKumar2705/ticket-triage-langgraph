@@ -1,7 +1,10 @@
-langchain==0.2.5
-langchain-community==0.2.5
+fastapi==0.115.0
+uvicorn==0.30.6
+pydantic==2.9.2
+
+langchain==0.2.6
 langchain-core==0.2.10
+langchain-community==0.2.6
 langgraph==0.2.25
-fastapi
-uvicorn
+
 pytest==9.0.1
