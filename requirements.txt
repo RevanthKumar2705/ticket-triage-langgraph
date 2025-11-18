@@ -2,4 +2,9 @@ fastapi==0.115.0
 uvicorn==0.30.6
 pydantic==2.9.2
 
-langgraph
+# LangChain + LangGraph
+langchain-core==0.2.23
+langchain-community==0.2.6
+langgraph==0.2.25
+
+pytest==9.0.1pytest==9.0.1
