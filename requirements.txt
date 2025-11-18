@@ -7,4 +7,4 @@ langchain-core==0.2.23
 langchain-community==0.2.6
 langgraph==0.2.25
 
-pytest==9.0.1pytest==9.0.1
+pytest==9.0.1
